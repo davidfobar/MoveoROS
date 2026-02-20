@@ -1,0 +1,103 @@
+############################################
+# Build directories (CMake out-of-source)
+############################################
+build/
+cmake-build-*/
+out/
+Debug/
+Release/
+RelWithDebInfo/
+MinSizeRel/
+
+############################################
+# CMake files
+############################################
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+CTestTestfile.cmake
+Testing/
+install_manifest.txt
+
+############################################
+# Generated binaries / artifacts
+############################################
+*.elf
+*.axf
+*.bin
+*.hex
+*.map
+*.list
+*.srec
+*.su
+*.dfu
+
+############################################
+# Object / dependency files
+############################################
+*.o
+*.obj
+*.a
+*.so
+*.d
+*.gcno
+*.gcda
+*.gcov
+
+############################################
+# STM32CubeIDE (if opened there)
+############################################
+.settings/
+.metadata/
+*.launch
+*.ioc.launch
+
+############################################
+# CubeMX generated backup files
+############################################
+*.bak
+*.mxproject.bak
+
+############################################
+# VS Code
+############################################
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+############################################
+# CLion / JetBrains
+############################################
+.idea/
+
+############################################
+# Eclipse
+############################################
+.project
+.cproject
+
+############################################
+# macOS / Linux / Windows
+############################################
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+*~
+
+############################################
+# Python (if using OpenOCD scripts/tools)
+############################################
+__pycache__/
+*.pyc
+venv/
+.env
+
+############################################
+# STM32Cube Programmer logs
+############################################
+STM32_Programmer_CLI.log

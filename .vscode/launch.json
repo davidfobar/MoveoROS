@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "STM32 FreeRTOS Debug",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32f4x.cfg"
+            ],
+            "executable": "${workspaceFolder}/build/Debug/RTOS_hello_world.elf",
+            "runToEntryPoint": "main",
+            "showDevDebugOutput": "none",
+            "svdFile": "${workspaceFolder}/STM32F4xx.svd",
+            "rtos": "FreeRTOS"
+        }
+    ]
+}
