@@ -1,18 +1,7 @@
 #include "Stream.h"
 #include <string.h>
 
-Stream::Stream() {
-}
-
 Stream::~Stream() {
-}
-
-size_t Stream::write(const uint8_t *buffer, size_t size) {
-    size_t count = 0;
-    for (size_t i = 0; i < size; i++) {
-        count += write(buffer[i]);
-    }
-    return count;
 }
 
 int Stream::peek() {

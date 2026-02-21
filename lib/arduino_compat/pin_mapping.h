@@ -30,11 +30,6 @@ enum PinIndex : uint8_t {
 
 extern const struct PhysicalPin pinMap[];
 
-// Function declarations
-void digitalWrite(uint8_t pin, uint8_t val);
-int digitalRead(uint8_t pin);
-void pinMode(uint8_t pin, uint8_t mode);
-
 #ifdef __cplusplus
 }
 #endif

@@ -7,6 +7,7 @@ add_library(Arduino_Compat STATIC
     Stream.cpp
     pin_mapping.c
     timer.c
+    software_uart.cpp
 )
 
 target_compile_definitions(Arduino_Compat PUBLIC STM32F446xx)

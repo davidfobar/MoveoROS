@@ -5,6 +5,8 @@
 #include <math.h>
 #include "pin_mapping.h"
 #include "timer.h"
+#include "Stream.h"
+#include "software_uart.h"
 
 #define ARDUINO 100
 
@@ -26,5 +28,10 @@ typedef uint8_t boolean;
 // Use C math library functions
 #define sqrt(x) sqrtf(x)
 #define fabs(x) fabsf(x)
+
+// Basic IO Function declarations
+void digitalWrite(uint8_t pin, uint8_t val);
+int digitalRead(uint8_t pin);
+void pinMode(uint8_t pin, uint8_t mode);
 
 #endif
