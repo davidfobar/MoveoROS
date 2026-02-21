@@ -70,5 +70,7 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
     Arduino_Compat
     AccelStepper
     TMCStepper
+    microros
+    microros_utils
     # Add user defined libraries
 )

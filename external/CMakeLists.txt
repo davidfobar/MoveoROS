@@ -1,4 +1,5 @@
 # Arduino compatibility layer
+add_subdirectory(micro_ros)
 add_subdirectory(arduino_compat)
 
 # AccelStepper wrapper
