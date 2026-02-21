@@ -31,19 +31,9 @@ enum PinIndex : uint8_t {
 extern const struct PhysicalPin pinMap[];
 
 // Function declarations
-bool pin_write(const struct PhysicalPin* pin, GPIO_PinState state);
-GPIO_PinState pin_read(const struct PhysicalPin* pin);
-void pin_toggle(const struct PhysicalPin* pin);
-
-static inline void pin_high(const struct PhysicalPin* pin) {
-    pin_write(pin, GPIO_PIN_SET);
-}
-
-static inline void pin_low(const struct PhysicalPin* pin) {
-    pin_write(pin, GPIO_PIN_RESET);
-}
-
-const char* pin_get_name(const struct PhysicalPin* pin);
+void digitalWrite(uint8_t pin, uint8_t val);
+int digitalRead(uint8_t pin);
+void pinMode(uint8_t pin, uint8_t mode);
 
 #ifdef __cplusplus
 }

@@ -27,21 +27,3 @@ void pinMode(uint8_t pin, uint8_t mode)
   (void)pin;
   (void)mode;
 }
-
-unsigned long millis(void) {
-    // Return milliseconds from HAL_GetTick()
-    return 0;
-}
-
-unsigned long micros(void) {
-    // Return microseconds from timer
-    return 0;
-}
-
-void delay(unsigned long ms) {
-    // Use HAL_Delay()
-}
-
-void delayMicroseconds(unsigned int us) {
-    // Use busy wait or timer
-}

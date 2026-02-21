@@ -4,6 +4,7 @@
 #include <stdint.h>
 #include <math.h>
 #include "pin_mapping.h"
+#include "timer.h"
 
 #define ARDUINO 100
 
@@ -25,14 +26,5 @@ typedef uint8_t boolean;
 // Use C math library functions
 #define sqrt(x) sqrtf(x)
 #define fabs(x) fabsf(x)
-
-// Arduino IO functions
-void digitalWrite(uint8_t pin, uint8_t val);
-int digitalRead(uint8_t pin);
-void pinMode(uint8_t pin, uint8_t mode);
-unsigned long millis(void);
-unsigned long micros(void);
-void delay(unsigned long ms);
-void delayMicroseconds(unsigned int us);
 
 #endif
