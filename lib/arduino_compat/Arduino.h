@@ -3,6 +3,7 @@
 
 #include <stdint.h>
 #include <math.h>
+#include "pin_mapping.h"
 
 #define ARDUINO 100
 
